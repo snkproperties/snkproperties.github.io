@@ -1,0 +1,339 @@
+/* CSS used here will be applied after bootstrap.css */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+	background: #f9f9f9;
+}
+
+.carousel {
+    margin-top: 20px;
+}
+.item .thumb {
+	width: 25%;
+	cursor: pointer;
+	float: left;
+}
+.item .thumb img {
+	width: 100%;
+	margin: 2px;
+}
+.item img {
+	width: 100%;	
+}
+
+
+.content2 {
+    height: 60vh;
+    width: 100%;
+    displaY: flex;
+    align-items: center;
+    background-image: linear-gradient(rgba(4,9,30,0.3),rgba(4,9,30,0.3)),url("https://streetviewpixels-pa.googleapis.com/v1/thumbnail?panoid=Xj7XIvAr7do29zg2iTL_YQ&cb_client=search.gws-prod.gps&w=408&h=240&yaw=189.76756&pitch=0&thumbfov=100");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.video-play-button {
+  position: relative;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  box-sizing: content-box;
+  display: block;
+  width: 32px;
+  height: 44px;
+  /* background: #fa183d; */
+  border-radius: 50%;
+  padding: 18px 20px 18px 28px;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(145, 108, 235,0.75);
+-moz-box-shadow: 0px 2px 5px 0px rgba(145, 108, 235,0.75);
+box-shadow: 0px 2px 5px 0px rgba(145, 108, 235,0.75);
+  
+}
+
+.video-play-button:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: #dee0e0;
+  border-radius: 50%;
+
+}
+
+.video-play-button:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: #8cebeb;
+  border-radius: 50%;
+  transition: all 200ms;
+}
+
+.video-play-button:hover:after {
+  background-color: #A7C7E7;
+}
+
+.video-play-button img {
+  position: relative;
+  z-index: 3;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+.video-play-button span {
+  display: block;
+  position: relative;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  border-left: 32px solid #fff;
+  border-top: 22px solid transparent;
+  border-bottom: 22px solid transparent;
+}
+
+.video-overlay {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 10px;
+  background: rgba(0,0,0,0.80);
+  opacity: 0;
+  transition: all ease 500ms;
+}
+
+.video-overlay.open {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  opacity: 1;
+}
+
+.video-overlay-close {
+  position: relative;
+  z-index: 1000;
+  top:75px;
+  right: 75px;
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 200ms;
+}
+
+.video-overlay-close:hover {
+  color: #fa183d;
+}
+
+.video-overlay iframe {
+  position: absolute;
+  top: 54%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+   width: 80%; 
+  height: 80%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.75);
+}
+
+.site-footer
+{
+  background-color:#dee0e0;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#c4cfcf
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+.border-visuals1 {
+    background: #f9f9f9;
+    height: 5vh;
+    width: 100%;
+}
+.border-visuals2 {
+    background: #f9f9f9;
+    height: 6vh;
+    width: 100%;
+}

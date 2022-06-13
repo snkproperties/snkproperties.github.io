@@ -1,0 +1,169 @@
+
+    <html>
+<head>
+  <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<section class="content2">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="pb-2"></h1>
+                <!-- Button trigger modal -->
+
+                <a id="play-video" class="video-play-button" href="#" data-toggle="modal" data-target=".bd-example-modal-lg">
+                    <span></span>
+                </a>
+
+                <div id="video-overlay" class="video-overlay">
+                    <a class="video-overlay-close">&times;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <video poster="https://i.ytimg.com/vi/Lm8yzmxZtZ0/maxresdefault.jpg" id="player" playsinline controls>
+                    <source src="./assets/video/promotion.mp4" type="video/mp4" />
+
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <!-- Playr JS -->
+    <script src="https://cdn.plyr.io/3.5.6/plyr.polyfilled.js"></script>
+    <!-- partial -->
+    <script src="./assets/js/main.js"></script>
+
+    
+
+</section>
+<section class="border-visuals1"></section>
+      <div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+        <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="./assets/imgs/house1.jpg">
+                </div>
+                <div class="item">
+                    <img src="./assets/imgs/house2.jpg">
+                </div>
+                <div class="item">
+                    <img src="./assets/imgs/house3.jpg">
+                </div>
+                <div class="item">
+                    <img src="./assets/imgs/house4.jpg">
+                </div>
+                <div class="item">
+                    <img src="./assets/imgs/house5.jpg">
+                </div>
+                <div class="item">
+                    <img src="./assets/imgs/house6.jpg">
+                </div>
+                <div class="item">
+                    <img src="./assets/imgs/house7.jpg">
+                </div>
+                <div class="item">
+                    <img src="./assets/imgs/house8.jpg">
+                </div>
+                <div class="item">
+                    <img src="./assets/imgs/house9.jpg">
+                </div>
+                <div class="item">
+                    <img src="./assets/imgs/house10.jpg">
+                </div>
+                <div class="item">
+                    <img src="./assets/imgs/house11.jpg">
+                </div>
+                <div class="item">
+                    <img src="./assets/imgs/house12.jpg">
+                </div>
+            </div>
+        </div> 
+    <div class="clearfix">
+        <div id="thumbcarousel" class="carousel slide" data-interval="false">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div data-target="#carousel" data-slide-to="0" class="thumb"><img src="./assets/imgs/house1.jpg"></div>
+                    <div data-target="#carousel" data-slide-to="1" class="thumb"><img src="./assets/imgs/house2.jpg"></div>
+                    <div data-target="#carousel" data-slide-to="2" class="thumb"><img src="./assets/imgs/house3.jpg"></div>
+                    <div data-target="#carousel" data-slide-to="3" class="thumb"><img src="./assets/imgs/house4.jpg"></div>
+                </div><!-- /item -->
+                <div class="item">
+                    <div data-target="#carousel" data-slide-to="4" class="thumb"><img src="./assets/imgs/house5.jpg"></div>
+                    <div data-target="#carousel" data-slide-to="5" class="thumb"><img src="./assets/imgs/house6.jpg"></div>
+                    <div data-target="#carousel" data-slide-to="6" class="thumb"><img src="./assets/imgs/house7.jpg"></div>
+                    <div data-target="#carousel" data-slide-to="7" class="thumb"><img src="./assets/imgs/house8.jpg"></div>
+                </div><!-- /item -->
+                <div class="item">
+                    <div data-target="#carousel" data-slide-to="4" class="thumb"><img src="./assets/imgs/house9.jpg"></div>
+                    <div data-target="#carousel" data-slide-to="5" class="thumb"><img src="./assets/imgs/house10.jpg"></div>
+                    <div data-target="#carousel" data-slide-to="6" class="thumb"><img src="./assets/imgs/house11.jpg"></div>
+                    <div data-target="#carousel" data-slide-to="7" class="thumb"><img src="./assets/imgs/house12.jpg"></div>
+                </div><!-- /item -->
+            </div><!-- /carousel-inner -->
+            <a class="left carousel-control" href="#thumbcarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#thumbcarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div> <!-- /thumbcarousel -->
+    </div><!-- /clearfix -->
+    </div> <!-- /col-sm-6 -->
+    <div class="col-sm-6">
+        <h2>96 Patterson Cres</h2>
+        <h3>For rent: 2200/month</h3>
+        <p>Welcome to 96 Patterson Cres in Carleton Place! Situated in a fantastic location! This 3 bedroom 2 bathroom bungalow is within minutes from the river walking tails, bike paths, parks, school, shopping and hospital! This sundrenched home boasts an open concept floor plan with two bedrooms and 4-pc bath on the main level. Generous sized primary bedroom has huge walk in closet and patio door to the upper balcony. Lower level complete with a large family room, 3rd bedroom 4-pc bath and walkout basement. Lots of storage and your very own workshop or craft room at the back. With no rear neighbors, you will love the privacy you have. Home has been lovingly cared for over the years.
+        </p>
+        <h3>About 96 Patterson</h3>
+        <p>Carleton Place, Ontario K7C 4P3</p>
+        <p>Directions: From McNelly to Patterson Cres</p>
+        <p>Availability: 2022 Aughust Onwards</p>
+
+    </div> <!-- /col-sm-6 -->
+  </div> <!-- /row -->
+</div> <!-- /container -->
+
+<section class="border-visuals2"></section>
+
+<!-- Site footer -->
+<footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Email us at  
+       <a href="#">Placeholder@gmail.com</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+<!-- partial -->
